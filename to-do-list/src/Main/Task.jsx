@@ -65,14 +65,15 @@ export default function Task(props) {
   };
 
   return (
-    <div>
+    <div className="container-fluid" style={{margin: '2% auto', padding: '1% auto'}}>
       <br />
       <h5>{props.task}</h5>
-      <button onClick={editHandler}>Edit</button>
-      <button onClick={deleteHandler}>Delete</button>
+      <button className="btn btn-primary" onClick={editHandler}>Edit</button>&nbsp;&nbsp;&nbsp;
+      <button className="btn btn-danger" onClick={deleteHandler}>Delete</button>
       <br />
       {showEdit ? (
         <form onSubmit={updateHandler}>
+            <br />
           <label htmlFor="task">Updated Task</label>
           <br />
           <input
@@ -82,7 +83,9 @@ export default function Task(props) {
             placeholder="Task Name"
             required
           />
-          <button type="submit">Update</button>
+          <br/><br />
+          <button className="btn btn-success" type="submit">Update</button>
+          <br />
         </form>
       ) : null}
     </div>

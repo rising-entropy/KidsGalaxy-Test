@@ -49,8 +49,8 @@ export default function AddTask() {
           onChange={taskHandler}
           placeholder="Task Name"
           required
-        />
-        <button type="submit">Add Task</button>
+        />&nbsp;&nbsp;&nbsp;
+        <button className="btn btn-success" type="submit">Add Task</button>
       </form>
       <br />
     </div>
