@@ -20,4 +20,5 @@ Basic To-Do List Application that encompasses all concepts required - CRUD opera
 The project works on SQLite, but can be set up for MySQL using `django-mysql`
 
 Do reach out for anything. Thanks!
+
 risingentropy20@gmail.com
