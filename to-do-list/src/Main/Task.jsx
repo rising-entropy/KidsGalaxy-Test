@@ -3,8 +3,7 @@ import React from 'react'
 export default function Task(props) {
     return (
         <div>
-            {props.id}
-            {props.task}
+            <h5>{props.task}</h5>
         </div>
     )
 }
